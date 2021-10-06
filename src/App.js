@@ -1,9 +1,13 @@
+import React from "react";
+import AboutSection from "./components/AboutSection";
+//import pages
+import AboutUs from "./pages/AboutUs";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Film</h1>
+        <AboutUs/>
       </header>
     </div>
   );
