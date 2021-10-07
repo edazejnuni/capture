@@ -66,6 +66,7 @@ const Services = styled(About)`
 const Cards = styled.div`
     display: flex;
     flex-wrap: wrap;
+    justify-content:space-between;
 `;
 
 const Card = styled.div`
