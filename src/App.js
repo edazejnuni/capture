@@ -8,15 +8,19 @@ import OurWork from "./pages/OurWork";
 import Nav from "./components/Nav";
 import MovieDetail from "./pages/MovieDetails";
 //Router
-import {Switch, Route} from "react-router-dom";
+import {Switch, Route, useLocation} from "react-router-dom";
+//Animations
+import {AnimatePresence} from 'framer-motion';
 
 function App() {
+  const location = useLocation();
   return (
     <div className="App">
       <header className="App-header">
         <GlobalStyle/>
         <Nav/>
-        <Switch>
+        <AnimatePresence exitBeforeEnter>
+        <Switch location={location} key={location.pathname}>
           <Route path="/" exact>
             <AboutUs/>
           </Route>
@@ -30,6 +34,8 @@ function App() {
             <ContactUS/>
           </Route>
         </Switch>
+        </AnimatePresence>
+      
       </header>
     </div>
   );
