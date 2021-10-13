@@ -16,7 +16,7 @@ import {useScroll} from './useScroll';
 const ServicesSection = () =>{
     const [element,controls] = useScroll();
     return(
-        <Services variants={scrollReveal} animate={controls} initial="hidden" ref={element}>
+        <Services variants={fade} animate={controls} initial="hidden" ref={element}>
             <Description>
                 <h2>High <span>quality</span> services.</h2>
                 <Cards>
