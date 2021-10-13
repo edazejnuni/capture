@@ -27,7 +27,7 @@ function App() {
           <Route path="/work" exact> 
             <OurWork/>
           </Route>
-          <Route path="/work/:id">
+          <Route path="/work/:id">z
             <MovieDetail/>
           </Route>
           <Route path="/contact">
@@ -35,7 +35,6 @@ function App() {
           </Route>
         </Switch>
         </AnimatePresence>
-      
       </header>
     </div>
   );
