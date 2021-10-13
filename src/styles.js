@@ -7,6 +7,9 @@ export const About = styled.div`
     justify-content: space-between;
     padding: 5rem 10rem;
     color: white;
+    h4{
+        cursor: pointer;
+    }
 `;
 export const Description = styled.div`
     flex:1;
